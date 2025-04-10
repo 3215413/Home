@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFDE00;
+        }
+        header {
+            background: mediumpurple;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            text-align: center;        
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            image-resolution: 24px;
+        }
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+            display: flex;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+        .search-bar button {
+            background: #ddd;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .video-card {
+            width: 300px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .video-card iframe {
+            width: 100%;
+            height: 170px;
+        }
+        .video-card p {
+            padding: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        footer {
+            background: red;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            position: fixed;
+            bottom: 0;
+            width: 100%;}
+              .nav-bar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background:red;
+            padding: 1px;
+        }
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .nav-bar a:hover {
+            background: maroon;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .side-image {
+            position: fixed;
+            left: 0; /* Set it to the right side of the screen */
+            top: 59%; /* Align it vertically in the middle */
+            transform: translateY(-50%); /* Adjust to center the image */
+            width: 200px; /* Set the width of the image */
+            height: 550px;
+            border-radius: 10px; 
+        }
+        @media (max-width: 768px) {
+            .video-container {
+                flex-direction: column;
+                align-items: center;
+            }
+             table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            text-align: center;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+
+    </style>
+    <script>
+        function goToFeedbackPage() {
+            window.location.href = 'feedback.html';
+        }
+        function searchFunction() {
+            let query = document.getElementById('search-input').value;
+            alert('You searched for: ' + query);
+        }
+    </script>
+</head>
+<body> 
+    <header>
+    <right><div><a href="#"><img src="505.png" height="100" width="100"/></a></div></right>
+        <div class="logo"><marquee>Welcome to History fact check 505!</marquee></div>
+     <right><div><a href="#"><img src="505.png" height="100" width="100"/></a></div></right>
+    </header>
+    <nav class="nav-bar">
+        <a href="#">Home</a>
+        <a href="#">Bloopers</a>
+        <a href="#">HTML Tutorial</a>
+    </nav>
+    <img src="spain.png" alt="Spain" class="side-image" />
+<table>
+    <div class="video-container">
+        <div class="video-card">
+             
+        <tr>
+            <th font bgcolor ="mediumpurple">Video: What is the Reconquista?</th>
+            <th font bgcolor ="mediumpurple">Audio: What is the Reconquista</th>
+        </tr>
+        <tr>
+            <td>
+                <video width="450" height="250" controls>
+                    <source src="Reconquista.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <br><br> <br><br><li>Description: This is a video version of "What is the Reconquista". This provides context about the military campaign called "Reconquista" unleashed by the Austurias (Now part of the "Spain" we know today today.) against the Arab-Muslims. All pieces of information used for this video are accredited down below:</li>
+                <li> The Editors of Encyclopaedia Britannica. (2025, February 13). Reconquista | Definition, History, Significance, & Facts. Encyclopedia Britannica. https://www.britannica.com/event/Reconquista
+                <li> Admin. (2023, November 19). Reconquista of Spain: Key Battles and sieges | Medieval Chronicles. Medieval Chronicles. https://www.medievalchronicles.com/medieval-europe/medieval-spain/reconquista-of-spain-key-battles-and-sieges/ </li>
+                <li> History Mapped Out. (2024, November 8). The Reconquista: the victory of Christianity and the unification of Spain [Video]. YouTube. https://www.youtube.com/watch?v=cMp3UCK2uwk </li>
+            </td>
+        </div>
+
+        <div class="video-card">
+              <td>
+                 <img src="Pic.png"width="450" height="250"><br>
+                <audio controls>
+
+                    <source src="Reconquista1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+                <br><li>Description: This is a video version of "What is the Reconquista". This provides context about the military campaign called "Reconquista" unleashed by the Austurias (Now part of the "Spain" we know today today.) against the Arab-Muslims. All pieces of information used for this video are accredited down below:</li>
+                <li> The Editors of Encyclopaedia Britannica. (2025, February 13). Reconquista | Definition, History, Significance, & Facts. Encyclopedia Britannica. https://www.britannica.com/event/Reconquista
+                <li> Admin. (2023, November 19). Reconquista of Spain: Key Battles and sieges | Medieval Chronicles. Medieval Chronicles. https://www.medievalchronicles.com/medieval-europe/medieval-spain/reconquista-of-spain-key-battles-and-sieges/ </li>
+                <li> History Mapped Out. (2024, November 8). The Reconquista: the victory of Christianity and the unification of Spain [Video]. YouTube. https://www.youtube.com/watch?v=cMp3UCK2uwk </li>
+            </td>
+        </tr>
+    </table>
+        </div>
+        
+    
+
+    <footer>
+        &copy; 8-Venezuela
+    </footer>
+    </div>
+</body>
+</html>
